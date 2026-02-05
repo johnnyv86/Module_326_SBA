@@ -1,0 +1,68 @@
+
+/* IMPORT & VARIABLES */
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
+/* Provided Colors */
+:root {
+    --dark-blue: hsl(233, 26%, 24%)
+    --lime-green: hsl(136, 64%, 51%)
+    -- brigt-cyan: hsl(192, 69%, 51%)
+    --gray-blue: hsl(233, 8%, 62%)
+    --light-gray: hsl(220, 16%, 96%)
+    --very-light-gray: hsl(0, 0%, 98%)
+    --white: hsl(0, 100%, 100%)
+}
+
+/* STYLE: RESET & BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--gray-blue);
+    background-color: var(--very-light-gray);
+    overflow-x: hidden /* To prevent horizontal scrolling on mobile */
+}
+
+/* TYPOGRAPHY DEFAULTS */
+h1, h2, h3, h4 {
+    color: var(--dark-blue);
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* UTILITY CLASS: CONTENT WIDTH*/
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* GRADIENT BUTTON */
+.btn-invite {
+    display: inline-block;
+    padding: 12px 30px;
+    background: linear-gradient(to right, var(--lime-green), var(--bright-cyan));
+    color: var(--white);
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    transition: opacity 0.3s ease;
+}
+
+.btn-invite:hover {
+    opacity: 0.75;
+}
