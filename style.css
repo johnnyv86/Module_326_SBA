@@ -110,3 +110,30 @@ ul {
 .header__links a:hover::after {
     opacity: 1;
 }
+
+/* HERO SECTION */
+.hero {
+    background-color: var(--very-light-gray);
+    background-image: url('images/bg-intro-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    min-height: 40vh;
+}
+
+.hero__container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.hero__image img {
+    width: 100%;
+}
+
+.hero__text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
