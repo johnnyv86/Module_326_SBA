@@ -233,3 +233,49 @@ articles {
         grid-template-columns: repeat(4, 1fr);
     }
 }
+
+/* FOOTER Style */
+.footer {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 2.5rem;
+    text-align: center;
+}
+
+.footer__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.footer__links a {
+    display: block;
+    margin-bottom: 0.8rem;
+    color: var(--white);
+    transition: color 0.3s;
+}
+
+.footer__links a:hover {
+    color: var(--lime-green);
+}
+
+/*DESKTOP FOOTER*/
+@media (miin-width: 64em) {
+    .footer {
+        text-align: left;
+    }
+
+    .footer__container {
+        grid-template-columns: 2fr 1fr 1fr 2fr;
+        align-items: center;
+    }
+
+    .footer_logo {
+        display: block;
+        margin-bottom: 2rem;
+    }
+
+    .footer__cta {
+        text-align: right;
+    }
+}
