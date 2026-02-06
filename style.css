@@ -175,3 +175,21 @@ ul {
         display: none;
     }
 } 
+
+/* FEATURES & ARTICLES*/
+.features {
+    background-color: var(--light-gray);
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.features__grid, .articles__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+features__item img {
+    margin-bottom: 1.5rem;
+}
