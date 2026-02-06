@@ -66,3 +66,47 @@ ul {
 .btn-invite:hover {
     opacity: 0.75;
 }
+
+/* FLEXBOX HELPER */
+.flex {
+    display: flex;
+}
+
+.flex-jc-sb {
+    justify-content: space-between;
+}
+
+.flex-ai-c {
+    align-items: center;
+}
+
+/* HEADER & NAV */
+.header {
+    background-color: var(--white);
+    position: relative;
+    z-index: 100;
+    padding: 1.5rem 0;
+}
+
+.header__links a {
+    margin-left: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--gray-blue);
+    position: relative;
+}
+
+.header__links a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    bottom: -30px;
+    background: linear-gradient(to right, var(--lime-green), var(--bright-cyan));
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.header__links a:hover::after {
+    opacity: 1;
+}
