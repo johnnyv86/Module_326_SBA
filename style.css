@@ -176,7 +176,7 @@ ul {
     }
 } 
 
-/* FEATURES & ARTICLES*/
+/* FEATURES Style */
 .features {
     background-color: var(--light-gray);
     padding: 4rem 0;
@@ -192,4 +192,44 @@ ul {
 
 features__item img {
     margin-bottom: 1.5rem;
+}
+
+/* ARTICLES Sthyle */
+articles {
+    padding: 4rem;
+    background-color: var(--very-light-gray);
+}
+
+.article__item {
+    background-color: var(--white);
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.75);
+}
+
+.article__image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.article__text {
+    padding: 1.5rem;
+}
+
+.article__text .author {
+    font-size: 0.7rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* DESKTOP FEATURES & ARTICLES*/
+@media (min-width: 64em) {
+    .features, .articles {
+        text-align: left;
+    }
+
+    .features__grid, .articles__grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
