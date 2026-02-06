@@ -137,3 +137,41 @@ ul {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
 }
+
+.hero__text p {
+    margin-bottom: 2rem;
+}
+
+
+/* DESKTOP  SETTINGS*/
+@media (min-width: 64em) {
+    .hero {
+        background-image: url('images/bg-intro-desktop.svg');
+        background-size: 150%;
+        background-position: 20% 80%;
+    }
+
+    .hero__container {
+        flex-direction: row;
+        text-align: left;
+        height: 80vh;
+    }
+
+    .hero__text {
+        flex: 1;
+        padding-right: 4rem;
+    }
+
+    .hero__image {
+        flex: 1;
+        background-image: url('images/image-mockups.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+        background-position: center bottom;
+    }
+
+    .hero__image img {
+        display: none;
+    }
+} 
